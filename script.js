@@ -21,9 +21,9 @@ function spawnConfetti(count = 160) {
     pieces.push({
       x: W / 2 + (Math.random() - 0.5) * 120,
       y: H * 0.45,
-      vx: (Math.random() - 0.5) * 22,
-      vy: Math.random() * -24 - 8,
-      g: 0.6 + Math.random() * 0.3,
+      vx: (Math.random() - 0.5) * 14,
+      vy: Math.random() * -16 - 4,
+      g: 0.35 + Math.random() * 0.2,
       size: 5 + Math.random() * 7,
       color: COLORS[(Math.random() * COLORS.length) | 0],
       rot: Math.random() * Math.PI,
