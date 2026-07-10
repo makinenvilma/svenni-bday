@@ -72,7 +72,7 @@ function tick() {
 function open() {
   if (body.classList.contains("opened")) return;
   body.classList.add("opened");
-  setTimeout(() => spawnConfetti(), 220);
+  setTimeout(() => spawnConfetti(), 450);
 }
 
 function reset() {

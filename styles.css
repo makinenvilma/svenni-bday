@@ -149,8 +149,8 @@ body.opened .opener {
   z-index: 20;
   pointer-events: none;
   transition:
-    transform .55s cubic-bezier(.16,.84,.28,1) .12s,
-    opacity .35s ease .12s;
+    transform .8s cubic-bezier(.16,.84,.28,1) .2s,
+    opacity .5s ease .2s;
 }
 body.opened .card {
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
@@ -253,13 +253,13 @@ body.opened .card {
   position: absolute; width: 28px; height: 34px; border-radius: 50%;
   top: -36px; opacity: 0;
 }
-.b1 { left: 16px;  background: radial-gradient(circle at 35% 30%, #f7bccb, #ee8ba3); animation-delay: .2s; }
-.b3 { right: 16px; background: radial-gradient(circle at 35% 30%, #bcd6f5, #93b9ea); animation-delay: .45s; }
+.b1 { left: 16px;  background: radial-gradient(circle at 35% 30%, #f7bccb, #ee8ba3); animation-delay: .4s; }
+.b3 { right: 16px; background: radial-gradient(circle at 35% 30%, #bcd6f5, #93b9ea); animation-delay: .7s; }
 .balloon::after {
   content: ""; position: absolute; bottom: -13px; left: 50%;
   width: 1px; height: 15px; background: rgba(0,0,0,.2); transform: translateX(-50%);
 }
-body.opened .b1, body.opened .b3 { animation: rise 1.8s ease forwards; }
+body.opened .b1, body.opened .b3 { animation: rise 2.4s ease forwards; }
 @keyframes rise {
   0%   { opacity: 0; transform: translateY(12px) scale(.6); }
   30%  { opacity: 1; }
@@ -267,9 +267,9 @@ body.opened .b1, body.opened .b3 { animation: rise 1.8s ease forwards; }
 }
 .b2 {
   left: 50%; background: radial-gradient(circle at 35% 30%, #fbdd9a, #f0bd54);
-  transform: translateX(-50%); animation-delay: .32s;
+  transform: translateX(-50%); animation-delay: .55s;
 }
-body.opened .b2 { animation: riseCenter 1.8s ease forwards; }
+body.opened .b2 { animation: riseCenter 2.4s ease forwards; }
 @keyframes riseCenter {
   0%   { opacity: 0; transform: translateX(-50%) translateY(12px) scale(.6); }
   30%  { opacity: 1; }
@@ -292,7 +292,7 @@ body.opened .b2 { animation: riseCenter 1.8s ease forwards; }
   letter-spacing: .05em;
   cursor: pointer;
   backdrop-filter: blur(6px);
-  transition: background .3s ease, color .3s ease, transform .2s ease, opacity .4s ease .35s;
+  transition: background .3s ease, color .3s ease, transform .2s ease, opacity .5s ease .7s;
   opacity: 0;
   z-index: 21;
   pointer-events: none;
